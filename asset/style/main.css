@@ -1,0 +1,192 @@
+/*
+
+Main style tools for web-site. (c) maxorkema@gmail.com 
+Completed in 2017
+
+*/
+
+body{
+	background-color: #b7b9bc !important;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+img{
+	height: 50%;
+    width: 50%;
+}
+
+ul li{
+	display: inline;
+}
+
+@font-face {
+  font-family: FuturaPTBook; 
+  src: url(../fonts/FuturaPTBook.otf); 
+}
+@font-face {
+  font-family: FuturaPTDemi; 
+  src: url(../fonts/FuturaPTDemi.otf); 
+}
+
+
+.toper{
+	height: 60px;
+	background-color: #636568;
+	margin: 0px 0px 50px 0px;
+}
+.toper img{
+	height: 80px;
+    width: 80px;
+    margin-top: -10px;
+}
+.toper p {
+	font-family: FuturaPTBook;
+	text-transform: uppercase;
+	font-size: 28px;
+	padding: 10px 0px 0px 0px;
+}
+.toper input{	
+	margin: 5px 5px 0px 5px;
+	width: 130px;
+}
+
+
+.input_search_instaname{
+	font-family: FuturaPTBook;
+	font-size: 18px;
+	box-sizing: border-box;
+    border-radius: 4px;
+}
+.input_search_instaname:focus{
+	border: 2px solid #02d0f2;	
+}
+.input_search_instaname:focus::-webkit-input-placeholder { 
+	color: #3daacc; 
+}
+
+
+.search_btn {
+	font-family: FuturaPTBook;
+	font-size: 18px;
+	display: inline-block;
+	background: #b7b9bc;
+	color: #636568;
+	border: 2px solid;
+	border-radius: 1px;
+	transition: 0.2s;
+} 
+.search_btn:hover { 
+	background-color: #636568; 
+	color: #b7b9bc;
+}   
+.search_btn:active { 
+	background-color: white; 
+	color: white;
+}  
+
+
+.sort_btn{
+	margin: 0px 80px 50px 0px; 
+	text-align: left;
+}
+.sort_btn input{
+	font-family: FuturaPTBook;
+	font-size: 20px;
+	display: inline-block;
+	background: #636568;
+	color: #b7b9bc;
+	border: 2px solid;
+	border-radius: 1px;
+	transition: 0.2s;
+}
+.sort_btn input:hover { 
+	background-color: #b7b9bc;
+	color: #636568;
+} 
+.sort_btn input:active { 
+	background-color: #b7b9bc; 
+	color: white;
+}  	
+
+
+.image_item{
+	position:relative;
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+}
+.image_item img{
+	width: 300px;
+    height: 300px;
+}
+.image_item .holder{
+	position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:60;
+    padding:5px;
+    display:none;
+
+    color: black;
+	font-family: FuturaPTBook;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.image_item:hover .holder{
+	display:block;
+	background: rgba(183, 185, 188,.8);
+}
+
+
+.view_private_account{
+	margin: 100px 0px 150px 0px;
+	text-align: center;
+}
+.view_private_account p{
+	font-family: FuturaPTDemi;
+	text-transform: uppercase;
+	font-size: 28px;
+	padding: 10px 0px 0px 0px;
+}
+
+
+.view_empty_search{
+	margin: 100px 0px 150px 0px;
+	text-align: center;
+}
+.view_empty_search p{
+	font-family: FuturaPTDemi;
+	text-transform: uppercase;
+	font-size: 28px;
+	margin: 20px 0px 270px 0px;
+}
+
+
+.footer{
+	height: 80px;
+	background-color: #636568;
+	margin: 10px 0px 0px 0px;	
+	font-family: FuturaPTBook;
+	font-size: 18px;
+}
+.footer p{
+	text-align: right;
+	margin-top: 24px;
+}
+.footer a{
+	position: absolute;
+	text-align: left;
+	margin-top: 15px;
+	height: 46px;
+	width: 46px;
+	background: url(../images/instagram_gray.png);
+}
+.footer a:hover{
+	background: url(../images/instagram_black.png);
+}
